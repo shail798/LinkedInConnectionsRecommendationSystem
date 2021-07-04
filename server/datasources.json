@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "Blogs",
+    "password": "",
+    "name": "mongo",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

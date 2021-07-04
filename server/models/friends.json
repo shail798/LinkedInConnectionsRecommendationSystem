@@ -1,0 +1,23 @@
+{
+  "name": "Friends",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user1": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "user2": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
