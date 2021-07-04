@@ -1,0 +1,40 @@
+{
+  "name": "Blogs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "indexes": {
+    "uniqueIndex": {
+      "key": {
+        "blogId": 1
+      }
+    }
+  },
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "blogId": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "doc": "This is the primary ID used to identify a blog"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "users": {
+      "type": "array",
+      "required": false,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
